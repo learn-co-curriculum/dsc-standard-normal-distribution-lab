@@ -1,20 +1,20 @@
 
-# Standard Normal Distribution Lab
+# Standard Normal Distribution - Lab
 
-Data normalization and standardization are very import techniques during data pre-processing phase of analysis. We looked at the formula and a few toy examples to explain an observation's standard score and data standardization for normally distributed data. This lab, will shall standardize and visualize some normal distributions before we see standardization's real impact in machine learning in upcoming lessons. 
+## Introduction
+
+In the previous lesson, we looked at the formula and a few toy examples to explain an observation's standard score and data standardization for normally distributed data. This lab, will shall standardize and visualize some normal distributions before we see standardization's real impact in machine learning in upcoming lessons. 
 
 ## Objectives
 
-Students will be able to :
+You will be able to:
 
-* Normalize and standardize a given dataset using formulas as well as ScikitLearn
-* Visualize the data before-after pre-processing to visually inspect the results. 
+* Calculate and interpret z-scores for observations
+* Visualize the data before-after standardization to visually inspect the results. 
+
+## Let's get started
 
 > A Z-score tells us “how many standard deviations above or below the mean.” Every time you obtain a Z-score, use “above” or “below” in your phrasing.
-
-### Introduction
-
-
 
 The yields of apples trees in an orchard has been recorded in the file `yield.csv`. Each observation is recorded by weighing apples from trees (in pounds) and adding their weights. There are 5000 observations in total for this data. 
 
@@ -41,7 +41,7 @@ sns.distplot(df)
 
 
 
-![png](index_files/index_3_1.png)
+![png](index_files/index_2_1.png)
 
 
 
@@ -165,7 +165,7 @@ print ('SD:', round(sd,2))
 
 
 
-![png](index_files/index_18_1.png)
+![png](index_files/index_17_1.png)
 
 
 
@@ -176,3 +176,8 @@ print ('SD:', round(sd,2))
 # SD is 1
 # This is obvious because we standardised the whole distribution., 
 ```
+
+## Summary
+
+In this lab, you practiced your knowledge on the standard normal distribution!
+
