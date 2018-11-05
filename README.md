@@ -171,7 +171,7 @@ print ('SD:', round(sd,2))
 
 ```python
 # Your observations
-# It is a standard nornal distribution
+# It is a standard normal distribution
 # Mean is 0 (it is a very small figure that rounds off to 0)
 # SD is 1
 # This is obvious because we standardised the whole distribution., 
