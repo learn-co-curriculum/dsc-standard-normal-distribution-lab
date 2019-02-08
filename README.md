@@ -3,7 +3,7 @@
 
 ## Introduction
 
-In the previous lesson, we looked at the formula and a few toy examples to explain an observation's standard score and data standardization for normally distributed data. This lab, will shall standardize and visualize some normal distributions before we see standardization's real impact in machine learning in upcoming lessons. 
+In the previous lesson, we looked at the formula and a few toy examples to explain an observation's standard score and data standardization for normally distributed data. In this lab, we will standardize and visualize some normal distributions.
 
 ## Objectives
 
@@ -30,18 +30,77 @@ import pandas as pd
 # Read the yield data as a dataframe
 df = pd.read_csv('yield.csv')
 df.head()
-sns.distplot(df)
 ```
 
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x1a1951e0f0>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>39.741234</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>39.872055</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>44.331164</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>46.600623</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>40.694984</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 
 
-![png](index_files/index_2_1.png)
+```python
+sns.distplot(df)
+```
+
+    /Users/matthew.mitchell/anaconda3/lib/python3.6/site-packages/matplotlib/axes/_axes.py:6462: UserWarning: The 'normed' kwarg is deprecated, and has been replaced by the 'density' kwarg.
+      warnings.warn("The 'normed' kwarg is deprecated, and has been "
+
+
+
+
+
+    <matplotlib.axes._subplots.AxesSubplot at 0x10ce5da20>
+
+
+
+
+![png](index_files/index_3_2.png)
 
 
 
@@ -160,12 +219,16 @@ print ('Mean:', round(mean,2))
 print ('SD:', round(sd,2))
 ```
 
+    /Users/matthew.mitchell/anaconda3/lib/python3.6/site-packages/matplotlib/axes/_axes.py:6462: UserWarning: The 'normed' kwarg is deprecated, and has been replaced by the 'density' kwarg.
+      warnings.warn("The 'normed' kwarg is deprecated, and has been "
+
+
     Mean: 0.0
     SD: 1.0
 
 
 
-![png](index_files/index_17_1.png)
+![png](index_files/index_18_2.png)
 
 
 
