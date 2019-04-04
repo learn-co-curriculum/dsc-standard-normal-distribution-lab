@@ -1,24 +1,26 @@
 
-# Standard Normal Distribution - Lab
+# The Standard Normal Distribution - Lab
 
 ## Introduction
 
-In the previous lesson, we looked at the formula and a few toy examples to explain an observation's standard score and data standardization for normally distributed data. This lab, will shall standardize and visualize some normal distributions before we see standardization's real impact in machine learning in upcoming lessons. 
+In the previous lesson, you learned about the formula of the z-score, and looked at a few toy examples to explain an observation's standard score for normally distributed data. In this lab, you'll practice by standardizing and visualize some normal distributions.
 
 ## Objectives
 
 You will be able to:
 
 * Calculate and interpret z-scores for observations
-* Visualize the data before-after standardization to visually inspect the results. 
+* Visualize the data before and after standardization to visually inspect the results 
 
 ## Let's get started
 
-> A Z-score tells us “how many standard deviations above or below the mean.” Every time you obtain a Z-score, use “above” or “below” in your phrasing.
+> A z-score can help identify how many standard deviations above or below the mean a certain observation is. Every time you obtain a z-score, use “above” or “below” in your phrasing.
 
 The yields of apples trees in an orchard has been recorded in the file `yield.csv`. Each observation is recorded by weighing apples from trees (in pounds) and adding their weights. There are 5000 observations in total for this data. 
 
-**1. Load, visualize and give general comments on the dataset. Use pandas for loading and inspecting the data.**
+## Load, visualize and give general comments on the dataset
+
+Use pandas for loading and inspecting the data.
 
 
 ```python
@@ -31,36 +33,82 @@ The yields of apples trees in an orchard has been recorded in the file `yield.cs
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x1a1951e0f0>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
 
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>39.741234</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>39.872055</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>44.331164</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>46.600623</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>40.694984</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
-
-![png](index_files/index_2_1.png)
 
 
 
 ```python
-# Your comments about the data here. 
+# Create a plot
+```
 
+
+![png](index_files/index_2_0.png)
+
+
+
+```python
+# Your comments about the data here
 
 ```
 
-**2. Write a simple sentence to explain what does each value represent in this data?**
+## Briefly explain what each value represents in this data set**
 
 
 ```python
 # Your answer here
 
-
 ```
 
-**3. What does the 3-sigma rule say about yields of trees ?**
+## Define the interval bounds where the contains 99% of the observations (hint: $3\sigma$)
 
 
 ```python
 # Perform any calculations necessary here
-
 
 ```
 
@@ -68,10 +116,9 @@ The yields of apples trees in an orchard has been recorded in the file `yield.cs
 ```python
 # Write your answer here 
 
-
 ```
 
-**4. Compute the Z-score for a tree yielding 35 pounds of apples. Interpret this Z-score.**
+## Compute and interpret the z-score for a tree yielding 35 pounds of apples
 
 
 ```python
@@ -83,16 +130,13 @@ The yields of apples trees in an orchard has been recorded in the file `yield.cs
 ```python
 # Interpret the result
 
-
 ```
 
-**5. Suppose a tree has a Z-score of 1.85. Interpret this Z-score. What is the yield of this tree?**
-
+## Suppose a tree has a z-score of 1.85. Interpret this z-score. What is the yield of this tree?
 
 
 ```python
 # Interpret the z score
-
 
 ```
 
@@ -108,7 +152,10 @@ The yields of apples trees in an orchard has been recorded in the file `yield.cs
 
 ```
 
-**6. Convert each tree’s yield is converted to a Z-score so that “new” derived variable is “Z-score for weight”. The units are still the apple trees. For the data set of all Z-scores:**
+##  Convert each tree’s yield to a z-score so the new variable is the “z-score for weight”
+
+The units are still the apple trees. For the data set of all z-scores:
+
 * What is the shape? 
 * The mean? 
 * The standard deviation?
@@ -116,6 +163,7 @@ The yields of apples trees in an orchard has been recorded in the file `yield.cs
 
 ```python
 # Give your solution here 
+
 ```
 
     Mean: 0.0
@@ -132,6 +180,6 @@ The yields of apples trees in an orchard has been recorded in the file `yield.cs
 
 ```
 
-## Summary 
+## Summary
 
 In this lab, you practiced your knowledge on the standard normal distribution!
