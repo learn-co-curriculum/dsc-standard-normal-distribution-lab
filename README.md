@@ -1,24 +1,26 @@
 
-# Standard Normal Distribution - Lab
+# The Standard Normal Distribution - Lab
 
 ## Introduction
 
-In the previous lesson, we looked at the formula and a few toy examples to explain an observation's standard score and data standardization for normally distributed data. In this lab, we will standardize and visualize some normal distributions.
+In the previous lesson, you learned about the formula of the z-score, and looked at a few toy examples to explain an observation's standard score for normally distributed data. In this lab, you'll practice by standardizing and visualize some normal distributions.
 
 ## Objectives
 
 You will be able to:
 
 * Calculate and interpret z-scores for observations
-* Visualize the data before-after standardization to visually inspect the results. 
+* Visualize the data before and after standardization to visually inspect the results 
 
 ## Let's get started
 
-> A Z-score tells us “how many standard deviations above or below the mean.” Every time you obtain a Z-score, use “above” or “below” in your phrasing.
+> A z-score can help identify how many standard deviations above or below the mean a certain observation is. Every time you obtain a z-score, use “above” or “below” in your phrasing.
 
 The yields of apples trees in an orchard has been recorded in the file `yield.csv`. Each observation is recorded by weighing apples from trees (in pounds) and adding their weights. There are 5000 observations in total for this data. 
 
-**1. Load, visualize and give general comments on the dataset. Use pandas for loading and inspecting the data.**
+## Load, visualize and give general comments on the dataset
+
+Use pandas for loading and inspecting the data.
 
 
 ```python
@@ -85,42 +87,31 @@ df.head()
 
 
 ```python
-sns.distplot(df)
+sns.distplot(df);
 ```
 
-    /Users/matthew.mitchell/anaconda3/lib/python3.6/site-packages/matplotlib/axes/_axes.py:6462: UserWarning: The 'normed' kwarg is deprecated, and has been replaced by the 'density' kwarg.
-      warnings.warn("The 'normed' kwarg is deprecated, and has been "
 
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x10ce5da20>
-
-
-
-
-![png](index_files/index_3_2.png)
+![png](index_files/index_2_0.png)
 
 
 
 ```python
-# Your comments about the data here. 
+# Your comments about the data here
 
-# The data is normally distributed as shown by the density curve. 
+# The data is normally distributed as shown by the density curve
 ```
 
-**2. Write a simple sentence to explain what does each value represent in this data?**
+## Briefly explain what each value represents in this data set**
 
 
 ```python
 # Your answer here
 
-# Each value represents the a yield from a single tree in terms of total weight of apples
-# that were obtained from this tree. 
+# Each value represents the yield from a single tree in terms of total weight of apples
+# that were obtained from this tree
 ```
 
-**3. What does the 3-sigma rule say about yields of trees ?**
+## Define the interval bounds where the contains 99% of the observations (hint: $3\sigma$)
 
 
 ```python
@@ -143,13 +134,13 @@ mean,sd
 ```python
 # Write your answer here 
 
-# mean value is 42.4 and standard deviation is 6 (rounded off)
+# the mean value is 42.4 and the standard deviation is around 6
 # 68% of tree yields have weight between (42.4 - 6) 36.4 and (42.4 - 6) 48.4 pounds; 
 # 95% between 30.4 and 54.4; 
 # Almost all between 24.4 and 60.4 pounds
 ```
 
-**4. Compute the Z-score for a tree yielding 35 pounds of apples. Interpret this Z-score.**
+## Compute and interpret the z-score for a tree yielding 35 pounds of apples
 
 
 ```python
@@ -173,8 +164,7 @@ z
 # This tree’s yield is 1.23 standard deviations below the mean yield.
 ```
 
-**5. Suppose a tree has a Z-score of 1.85. Interpret this Z-score. What is the yield of this tree?**
-
+## Suppose a tree has a z-score of 1.85. Interpret this z-score. What is the yield of this tree?
 
 
 ```python
@@ -204,7 +194,10 @@ X
 # Yield of this tree is 53.5 pounds. 
 ```
 
-**6. Convert each tree’s yield is converted to a Z-score so that “new” derived variable is “Z-score for weight”. The units are still the apple trees. For the data set of all Z-scores:**
+##  Convert each tree’s yield to a z-score so the new variable is the “z-score for weight”
+
+The units are still the apple trees. For the data set of all z-scores:
+
 * What is the shape? 
 * The mean? 
 * The standard deviation?
@@ -219,28 +212,24 @@ print ('Mean:', round(mean,2))
 print ('SD:', round(sd,2))
 ```
 
-    /Users/matthew.mitchell/anaconda3/lib/python3.6/site-packages/matplotlib/axes/_axes.py:6462: UserWarning: The 'normed' kwarg is deprecated, and has been replaced by the 'density' kwarg.
-      warnings.warn("The 'normed' kwarg is deprecated, and has been "
-
-
     Mean: 0.0
     SD: 1.0
 
 
 
-![png](index_files/index_18_2.png)
+![png](index_files/index_17_1.png)
 
 
 
 ```python
 # Your observations
+
 # It is a standard normal distribution
 # Mean is 0 (it is a very small figure that rounds off to 0)
 # SD is 1
-# This is obvious because we standardised the whole distribution., 
+# This is obvious because we standardised the whole distribution
 ```
 
 ## Summary
 
 In this lab, you practiced your knowledge on the standard normal distribution!
-
