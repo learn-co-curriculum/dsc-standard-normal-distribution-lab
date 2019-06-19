@@ -111,7 +111,9 @@ sns.distplot(df);
 # that were obtained from this tree
 ```
 
-## Define the interval bounds where the contains 99% of the observations (hint: $3\sigma$)
+## Define the interval bounds where such that the range contains 99% of the observations   
+
+> **Hint**: Recall the empirical rule related to $3\sigma$.
 
 
 ```python
