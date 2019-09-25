@@ -3,22 +3,22 @@
 
 ## Introduction
 
-In the previous lesson, you learned about the formula of the z-score, and looked at a few toy examples to explain an observation's standard score for normally distributed data. In this lab, you'll practice by standardizing and visualize some normal distributions.
+In the previous lesson, you learned about the formula of the $z$-score, and looked at a few toy examples to explain an observation's standard score for normally distributed data. In this lab, you'll practice by standardizing and visualize some normal distributions.
 
 ## Objectives
 
 You will be able to:
 
-* Calculate and interpret z-scores for observations
+* Calculate and interpret $z$-scores for observations
 * Visualize the data before and after standardization to visually inspect the results 
 
 ## Let's get started
 
-> A z-score can help identify how many standard deviations above or below the mean a certain observation is. Every time you obtain a z-score, use “above” or “below” in your phrasing.
+> A $z$-score can help identify how many standard deviations above or below the mean a certain observation is. Every time you obtain a $z$-score, use “above” or “below” in your phrasing.
 
-The yields of apples trees in an orchard has been recorded in the file `yield.csv`. Each observation is recorded by weighing apples from trees (in pounds) and adding their weights. There are 5000 observations in total for this data. 
+The yields of apple trees in an orchard have been recorded in the file `yield.csv`. Each observation is recorded by weighing apples from trees (in pounds) and adding their weights. There are 5000 observations in total for this data. 
 
-## Load, visualize and give general comments on the dataset
+## Load, visualize and give general comments about the dataset
 
 Use pandas for loading and inspecting the data.
 
@@ -101,7 +101,7 @@ sns.distplot(df);
 # The data is normally distributed as shown by the density curve
 ```
 
-## Briefly explain what each value represents in this data set**
+## Briefly explain what each value represents in this data set
 
 
 ```python
@@ -111,7 +111,7 @@ sns.distplot(df);
 # that were obtained from this tree
 ```
 
-## Define the interval bounds where such that the range contains 99% of the observations   
+## Define the interval bounds which contain 99% of the observations   
 
 > **Hint**: Recall the empirical rule related to $3\sigma$.
 
@@ -234,4 +234,4 @@ print ('SD:', round(sd,2))
 
 ## Summary
 
-In this lab, you practiced your knowledge on the standard normal distribution!
+In this lab, you practiced your knowledge of the standard normal distribution!
