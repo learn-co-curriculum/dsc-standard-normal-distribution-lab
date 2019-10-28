@@ -9,8 +9,8 @@ In the previous lesson, you learned about the formula of the $z$-score, and look
 
 You will be able to:
 
-* Calculate and interpret $z$-scores for observations
-* Visualize the data before and after standardization to visually inspect the results 
+* Calculate and interpret the z-score (standard score) for an observation from normally distributed data
+* Visualize data before and after standardization to visually inspect the results
 
 ## Let's get started
 
