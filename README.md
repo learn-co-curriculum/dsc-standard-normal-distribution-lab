@@ -1,4 +1,3 @@
-
 # The Standard Normal Distribution - Lab
 
 ## Introduction
@@ -87,7 +86,9 @@ Use pandas for loading and inspecting the data.
 ```
 
 
+    
 ![png](index_files/index_2_0.png)
+    
 
 
 
@@ -173,7 +174,9 @@ The units are still the apple trees. For the data set of all z-scores:
 
 
 
+    
 ![png](index_files/index_17_1.png)
+    
 
 
 
