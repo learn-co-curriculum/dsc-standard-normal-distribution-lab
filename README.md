@@ -1,4 +1,3 @@
-
 # The Standard Normal Distribution - Lab
 
 ## Introduction
@@ -87,11 +86,13 @@ df.head()
 
 
 ```python
-sns.distplot(df);
+sns.displot(df);
 ```
 
 
+    
 ![png](index_files/index_2_0.png)
+    
 
 
 
@@ -207,7 +208,7 @@ The units are still the apple trees. For the data set of all z-scores:
 
 ```python
 z_data = [(x - df['0'].mean())/df['0'].std() for x in df['0']]
-sns.distplot(z_data)
+sns.displot(z_data)
 mean = np.mean(np.array(z_data))
 sd = np.std((np.array(z_data)))
 print ('Mean:', round(mean,2))
@@ -219,7 +220,9 @@ print ('SD:', round(sd,2))
 
 
 
+    
 ![png](index_files/index_17_1.png)
+    
 
 
 
